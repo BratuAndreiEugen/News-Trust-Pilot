@@ -4,7 +4,7 @@
     <x:Property Name="Topic" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>888.8,743.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1670,3239</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -82,7 +82,6 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
@@ -92,9 +91,10 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ValidateSources" sap:VirtualizedContainerService.HintSize="713.6,3305.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ValidateSources" sap:VirtualizedContainerService.HintSize="718,3174" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="LinkList">
         <Variable.Default>
@@ -113,7 +113,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="672,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="676,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(x:String)">
           <mca:CSharpReference x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">LinkList</mca:CSharpReference>
@@ -125,48 +125,48 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Topic" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="672,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3">
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Topic" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="676,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">SourceTable</mca:CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Link" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="672,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1">
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Link" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="676,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">SourceTable</mca:CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Rating" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="672,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2">
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Rating" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="676,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2">
       <ui:AddDataColumn.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">SourceTable</mca:CSharpValue>
         </InArgument>
       </ui:AddDataColumn.DataTable>
     </ui:AddDataColumn>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="672,2254.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="676,2135" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="636.8,2129.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="640,2011" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="595.2,2036.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="598,1919" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Trustpilot Reviews: Experience the power of customer reviews" sap:VirtualizedContainerService.HintSize="558.4,1805.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="61c78880-fda6-4412-a711-6ee4bc5f0ba0" Version="V1">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Trustpilot Reviews: Experience the power of customer reviews" sap:VirtualizedContainerService.HintSize="560,1692" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="61c78880-fda6-4412-a711-6ee4bc5f0ba0" Version="V1">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524.8,1588.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="526,1476" sap2010:WorkflowViewState.IdRef="Sequence_4">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="sd:DataRow" Name="Row" />
                           <Variable x:TypeArguments="x:String" Name="itemToSearch" />
@@ -176,43 +176,18 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="483.2,61.6" sap2010:WorkflowViewState.IdRef="Assign_6">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:Object">
-                              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">item</mca:CSharpReference>
-                            </OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:Object">
-                              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">item.ToString().Replace("//", "))")</mca:CSharpValue>
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="483.2,61.6" sap2010:WorkflowViewState.IdRef="Assign_8">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">
-                              <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">itemToSearch</mca:CSharpReference>
-                            </OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">item.ToString().Substring(0, item.ToString().IndexOf("/") + 1).Replace("))", "//")</mca:CSharpValue>
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <Assign sap:VirtualizedContainerService.HintSize="483.2,61.6" sap2010:WorkflowViewState.IdRef="Assign_7">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:Object">
-                              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">item</mca:CSharpReference>
-                            </OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:Object">
-                              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">item.ToString().Replace("))", "//")</mca:CSharpValue>
-                            </InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="61c78880-fda6-4412-a711-6ee4bc5f0ba0" Version="V1">
+                        <ui:InvokeCode ContinueOnError="{x:Null}" Code="item = item.ToString().Replace(&quot;//&quot;, &quot;))&quot;);&#xD;&#xA;itemToSearch = item.ToString().Substring(0, item.ToString().IndexOf(&quot;/&quot;) + 1).Replace(&quot;))&quot;, &quot;//&quot;);&#xD;&#xA;item = item.ToString().Replace(&quot;))&quot;, &quot;//&quot;);" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="484,164" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+                          <ui:InvokeCode.Arguments>
+                            <InOutArgument x:TypeArguments="x:Object" x:Key="item">
+                              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">item</mca:CSharpReference>
+                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="x:String" x:Key="itemToSearch">
+                              <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">itemToSearch</mca:CSharpReference>
+                            </InOutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="Argument1" />
+                          </ui:InvokeCode.Arguments>
+                        </ui:InvokeCode>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="61c78880-fda6-4412-a711-6ee4bc5f0ba0" Version="V1">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.trustpilot.com/" DesignTimeRectangle="185, 449, 825, 80" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' aaname='' /&gt;" Guid="15cf57af-f0c0-4302-8664-f8f39f13eb6b" ImageBase64="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" InformativeScreenshot="0788a81903b425723ef0373cf6036f29.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Trustpilot Reviews: Experience the power of customer reviews' /&gt;" SearchSteps="FuzzySelector, Image" />
                           </uix:NTypeInto.Target>
@@ -222,7 +197,7 @@
                             </InArgument>
                           </uix:NTypeInto.Text>
                         </uix:NTypeInto>
-                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="483.2,119.2" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
                           <ui:SendHotkey.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d96bf880-fabe-4339-ba00-a982476c71bc">
                               <ui:Target.TimeoutMS>
@@ -234,20 +209,20 @@
                             </ui:Target>
                           </ui:SendHotkey.Target>
                         </ui:SendHotkey>
-                        <If sap:VirtualizedContainerService.HintSize="483.2,772" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If sap:VirtualizedContainerService.HintSize="484,764" sap2010:WorkflowViewState.IdRef="If_1">
                           <If.Condition>
                             <InArgument x:TypeArguments="x:Boolean">
                               <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">item != ""</mca:CSharpValue>
                             </InArgument>
                           </If.Condition>
                           <If.Then>
-                            <Sequence sap:VirtualizedContainerService.HintSize="375.2,581.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,576" sap2010:WorkflowViewState.IdRef="Sequence_5">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_5">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:Double">
                                     <mca:CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">rating</mca:CSharpReference>
@@ -257,7 +232,7 @@
                                   <InArgument x:TypeArguments="x:Double">-1</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <uix:NGetText ContinueOnError="True" DisplayName="Get Text '1.8'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="61c78880-fda6-4412-a711-6ee4bc5f0ba0" Timeout="3" Version="V1">
+                              <uix:NGetText ContinueOnError="True" DisplayName="Get Text '1.8'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="61c78880-fda6-4412-a711-6ee4bc5f0ba0" Timeout="10" Version="V1">
                                 <uix:NGetText.Target>
                                   <uix:TargetAnchorable BrowserURL="https://www.trustpilot.com/review/www.wikipedia.org" DesignTimeRectangle="817, 380, 28, 28" ElementType="Text" FriendlyName="'1.8'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' /&gt;" Guid="f1e772c6-1e45-4c2f-accb-d828cec64ea5" InformativeScreenshot="6572150762f6d236585a583eee5b4d96.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Wikipedia Reviews | Read Customer Service Reviews of www.wikipedia.org' /&gt;" SearchSteps="FuzzySelector">
                                     <uix:TargetAnchorable.Anchors>
@@ -273,7 +248,7 @@
                                   </OutArgument>
                                 </uix:NGetText.Text>
                               </uix:NGetText>
-                              <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                              <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
                                 <ui:AddDataRow.ArrayRow>
                                   <InArgument x:TypeArguments="s:Object[]">
                                     <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">new object[]{Topic, item, rating.ToString()}</mca:CSharpValue>
@@ -306,7 +281,7 @@
                 </uix:NApplicationCard>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="561.6,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="564,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -330,7 +305,7 @@
         </InArgument>
       </ui:ForEach.Values>
     </ui:ForEach>
-    <ui:AppendCsvFile Encoding="{x:Null}" Delimitator="Comma" DisplayName="Append to CSV" FilePath="news.csv" sap:VirtualizedContainerService.HintSize="672,134.4" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1">
+    <ui:AppendCsvFile Encoding="{x:Null}" Delimitator="Comma" DisplayName="Append to CSV" FilePath="news.csv" sap:VirtualizedContainerService.HintSize="676,132" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1">
       <ui:AppendCsvFile.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">SourceTable</mca:CSharpValue>
